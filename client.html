@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<style>
+body {
+    background-color: white;
+}
+#myCanvas {
+    background-color: lightblue;
+    width:100%;
+    height:80%;
+}
+#waiting {
+    background-color: beige;
+    width: 100%;
+    height: 10%;
+}
+button {
+    width:100%;
+}
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas">
+  <!--canvas-->
+</canvas>
+<div>
+    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+</div>
+<div id="waiting">
+  <!--waiting for room-->
+</div>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.fillStyle="blue";
+ctx.fillRect(mouseX,mouseY,50,20);
+
+
+</script>
+
+</body>
+</html>
